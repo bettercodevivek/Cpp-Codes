@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// Another way to use namespaces is :-  using std::cout
+
 // we can write our own namespace also in the following manner 
 
 namespace hello {
