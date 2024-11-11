@@ -17,5 +17,22 @@ int var2=25; // We can do both in a single line like this;
 
 const int var3 = 60;
 
+// Datatypes in cpp can be divided into 3 type broadly :- 
+// 1. Primitve
+// 2. Derived
+// 3. User-Defined
+
+// let us see a bit about primitive data types in c++
+
+int variable1 = 25;
+float balance =100.2;
+double temp=234.346;
+char variable2 = 'A';
+string name1 = "sdfbr";
+bool variable3 = false; 
+
+// Something New :- So basically in C++ double quotes are used to enclose string whereas single quotes are used to enclose single characters.
+
+cout<<variable2<<variable1<<name1;
 
 }
