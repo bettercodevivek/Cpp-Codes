@@ -33,6 +33,19 @@ bool variable3 = false;
 
 // Something New :- So basically in C++ double quotes are used to enclose string whereas single quotes are used to enclose single characters.
 
-cout<<variable2<<variable1<<name1;
+// cout<<variable2<<variable1<<name1;
+
+
+// Let us now see signed and unsigned integers.
+
+// basically if you want a variable to store only postive int values then unsigned should be used with it.
+
+unsigned int Tealeaves=-20;
+
+// Tealeaves = 20;
+
+// basically if a -ve int value is assigned to unsigned int then it generates a garbage value
+
+cout<<Tealeaves;
 
 }
