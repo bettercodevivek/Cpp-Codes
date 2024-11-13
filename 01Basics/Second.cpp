@@ -39,24 +39,34 @@ bool variable3 = false;
 
 // Let us now see signed and unsigned integers.
 
-// basically if you want a variable to store only postive int values then unsigned should be used with it.
+// // basically if you want a variable to store only postive int values then unsigned should be used with it.
 
-unsigned int Tealeaves=-20;
+// unsigned int Tealeaves=-20;
 
-// Tealeaves = 20;
+// // Tealeaves = 20;
 
-// basically if a -ve int value is assigned to unsigned int then it generates a garbage value
+// // basically if a -ve int value is assigned to unsigned int then it generates a garbage value
 
-// Similarly there are many other datatypes to see like long, long long, short
+// // Similarly there are many other datatypes to see like long, long long, short
 
-cout<<Tealeaves;
+// cout<<Tealeaves;
 
 // Something about strings is that if you want to use strings it is important to incljude their header file before using.
 
-string myName ;
+// string myName ;
 
-getline(cin,myName);
+// getline(cin,myName);
 
-cout<< myName;
+// cout<< myName;
+
+int BasePrice ;
+
+cout<<"Enter the Base Price of your tea";
+
+cin>>BasePrice;
+
+float newPrice = float(BasePrice + BasePrice*0.1);
+
+cout << newPrice;
 
 }
