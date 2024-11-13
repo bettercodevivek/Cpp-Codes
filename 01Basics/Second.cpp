@@ -69,4 +69,6 @@ float newPrice = float(BasePrice + BasePrice*0.1);
 
 cout << newPrice;
 
+// ASCII code for large alphabets starts with A=65 and a=97 for small.
+
 }
