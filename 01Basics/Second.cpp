@@ -1,6 +1,7 @@
 // In this we will learn about variables,constants,datatypes.
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main(){
@@ -46,6 +47,16 @@ unsigned int Tealeaves=-20;
 
 // basically if a -ve int value is assigned to unsigned int then it generates a garbage value
 
+// Similarly there are many other datatypes to see like long, long long, short
+
 cout<<Tealeaves;
+
+// Something about strings is that if you want to use strings it is important to incljude their header file before using.
+
+string myName ;
+
+getline(cin,myName);
+
+cout<< myName;
 
 }
