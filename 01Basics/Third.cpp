@@ -89,17 +89,36 @@ int main(){
 
 // Task 2
 
- int Hour;
- cout<<"Enter the hour of the day :- "<<endl;
- cin>>Hour;
+//  int Hour;
+//  cout<<"Enter the hour of the day :- "<<endl;
+//  cin>>Hour;
 
- if(8<=Hour<=18){
-    cout<<"The shop is open boss !"<<endl;
- }
- else{
-    cout<<"the shop is closed boss!";
- }
+//  if(8<=Hour<=18){
+//     cout<<"The shop is open boss !"<<endl;
+//  }
+//  else{
+//     cout<<"the shop is closed boss!";
+//  }
 
+
+// Task 3
+
+int NumberOfTeaCupsOrdered;
+int discount;
+cout<<"Enter the number of tea cups you have ordered :- "<<endl;
+cin>>NumberOfTeaCupsOrdered;
+
+if(NumberOfTeaCupsOrdered>20){
+   discount=20;
+}
+else if(10 < NumberOfTeaCupsOrdered < 20){
+    discount = 10;
+}
+else{
+    discount=0;
+}
+
+cout<<"You will get "<<discount<<"% discount"<<endl;
 
 
     return 0;
