@@ -33,16 +33,30 @@ int main(){
 
 // Task 3
 
-int TeaCups;
-cout<<"Enter the number of tea cups you want"<<endl;
-cin>>TeaCups;
+// int TeaCups;
+// cout<<"Enter the number of tea cups you want"<<endl;
+// cin>>TeaCups;
 
-for(int i=1;i<=TeaCups;i++){
- cout<<"Instructions for making Tea Cup = "<<i<<endl;
- cout<<"Step 1:- Add Water"<<endl; 
- cout<<"Step 2:- Add Tea"<<endl; 
- cout<<"Step 3:- Add Milk"<<endl; 
- cout<<"Step 4:- Let it Boil"<<endl; 
+// for(int i=1;i<=TeaCups;i++){
+//  cout<<"Instructions for making Tea Cup = "<<i<<endl;
+//  cout<<"Step 1:- Add Water"<<endl; 
+//  cout<<"Step 2:- Add Tea"<<endl; 
+//  cout<<"Step 3:- Add Milk"<<endl; 
+//  cout<<"Step 4:- Let it Boil"<<endl; 
+// }
+
+// Task 4
+string input;
+while(input!="stop"){
+getline(cin,input);
+if(input == "stop"){
+    break;
 }
+cout<<"Here is your tea"<<endl;
+
+}
+
+cout<<"no more tea now !";
+
  return 0;
 }                     
