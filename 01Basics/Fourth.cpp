@@ -22,13 +22,27 @@ int main(){
 
 // Task 2
 
-string Choice;
+// string Choice;
 
-do{
-    cout<<"Hello My Good Sir, Do wish to have more tea?"<<endl;
-    getline(cin,Choice);
+// do{
+//     cout<<"Hello My Good Sir, Do wish to have more tea?"<<endl;
+//     getline(cin,Choice);
+// }
+// while(Choice!="no");
+
+
+// Task 3
+
+int TeaCups;
+cout<<"Enter the number of tea cups you want"<<endl;
+cin>>TeaCups;
+
+for(int i=1;i<=TeaCups;i++){
+ cout<<"Instructions for making Tea Cup = "<<i<<endl;
+ cout<<"Step 1:- Add Water"<<endl; 
+ cout<<"Step 2:- Add Tea"<<endl; 
+ cout<<"Step 3:- Add Milk"<<endl; 
+ cout<<"Step 4:- Let it Boil"<<endl; 
 }
-while(Choice!="no");
-
  return 0;
 }                     
