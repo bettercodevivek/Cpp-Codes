@@ -46,17 +46,28 @@ int main(){
 // }
 
 // Task 4
-string input;
-while(input!="stop"){
-getline(cin,input);
-if(input == "stop"){
-    break;
-}
-cout<<"Here is your tea"<<endl;
+// string input;
+// while(input!="stop"){
+// getline(cin,input);
+// if(input == "stop"){
+//     break;
+// }
+// cout<<"Here is your tea"<<endl;
 
-}
+// }
 
-cout<<"no more tea now !";
+// cout<<"no more tea now !";
+
+// Task 5
+
+string TeaNames[5]={"milk Tea","red tea","green tea","black tea","blue tea"};
+
+for(int i=0;i<5;i++){
+    if(TeaNames[i]=="green tea"){
+        continue;
+    }
+    cout<<"Brewing"<<TeaNames[i];
+}
 
  return 0;
 }                     
