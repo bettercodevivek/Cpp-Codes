@@ -103,22 +103,52 @@ int main(){
 
 // Task 3
 
-int NumberOfTeaCupsOrdered;
-int discount;
-cout<<"Enter the number of tea cups you have ordered :- "<<endl;
-cin>>NumberOfTeaCupsOrdered;
+// int NumberOfTeaCupsOrdered;
+// int discount;
+// cout<<"Enter the number of tea cups you have ordered :- "<<endl;
+// cin>>NumberOfTeaCupsOrdered;
 
-if(NumberOfTeaCupsOrdered>20){
-   discount=20;
-}
-else if(10 < NumberOfTeaCupsOrdered < 20){
-    discount = 10;
-}
-else{
-    discount=0;
+// if(NumberOfTeaCupsOrdered>20){
+//    discount=20;
+// }
+// else if(10 < NumberOfTeaCupsOrdered < 20){
+//     discount = 10;
+// }
+// else{
+//     discount=0;
+// }
+
+// cout<<"You will get "<<discount<<"% discount"<<endl;
+
+// Task 4
+
+int Tea;
+float Price;
+string TeaName;
+cout<<"Please enter your choice of tea :-"<<endl<<"for green tea press 1"<<endl<<"for black tea press 2"<<endl<<"For oolong tea press 3"<<endl;
+cin>>Tea;
+
+switch(Tea){
+    case 1 : Price = 5 ;
+              TeaName="Green Tea";
+             cout<<"your selected tea is "<<TeaName<<" and its price is $"<<Price<<endl;
+             break;
+
+    case 2 : Price = 10 ;
+              TeaName="Black Tea";
+             cout<<"your selected tea is "<<TeaName<<" and its price is $"<<Price<<endl;
+             break;
+
+    case 3 : Price = 15 ;
+              TeaName="Oolong Tea";
+             cout<<"your selected tea is "<<TeaName<<" and its price is $"<<Price<<endl;
+             break;
+    default : cout<< "please select a valid choice"<<endl;
+              break;
+        
 }
 
-cout<<"You will get "<<discount<<"% discount"<<endl;
+
 
 
     return 0;
