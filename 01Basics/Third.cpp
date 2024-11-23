@@ -55,20 +55,50 @@ int main(){
 
     // Task 4
      
-     string status;
-     cout<<"Enter your status if you are a student or not :- "<<endl;
-     getline(cin,status);
+    //  string status;
+    //  cout<<"Enter your status if you are a student or not :- "<<endl;
+    //  getline(cin,status);
 
-     int NumberOfCups;
-     cout<<"Enter the Number of cups you have"<<endl;
-     cin>>NumberOfCups;
+    //  int NumberOfCups;
+    //  cout<<"Enter the Number of cups you have"<<endl;
+    //  cin>>NumberOfCups;
 
-     if(status=="student" || NumberOfCups > 15){
-        cout<<"You are eligible for a discount"<<endl;
-     }
-     else{
-        cout<<"Not eligible for discount"<<endl;
-     }
+    //  if(status=="student" || NumberOfCups > 15){
+    //     cout<<"You are eligible for a discount"<<endl;
+    //  }
+    //  else{
+    //     cout<<"Not eligible for discount"<<endl;
+    //  }
+
+
+   //NOW WE WILL BE PERFORMING SOME TASKS REALTED TO CONDITIONALS
+
+   // Task 1
+
+//    string orderName;
+
+//    cout<<"Enter the name of your order"<<endl;
+
+//    getline(cin,orderName);
+
+
+//    if(orderName == "green tea"){
+//     cout<<"Order is confirmed"<<endl;
+//    }
+
+
+// Task 2
+
+ int Hour;
+ cout<<"Enter the hour of the day :- "<<endl;
+ cin>>Hour;
+
+ if(8<=Hour<=18){
+    cout<<"The shop is open boss !"<<endl;
+ }
+ else{
+    cout<<"the shop is closed boss!";
+ }
 
 
 
