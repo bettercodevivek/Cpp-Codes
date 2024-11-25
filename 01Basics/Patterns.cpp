@@ -1,4 +1,5 @@
 #include<iostream>
+#include<math.h>
 using namespace std;
 
 void pattern1(int n){
@@ -122,6 +123,25 @@ void pattern9(int n){
         cout<<endl;
     }
 }
+ int Multiplier(int x){
+             int rem,value=0;
+             while(x!=0){
+                rem=x%10;
+                value=value+pow(rem,2);
+                x=x/10;
+             }
+             return value;
+        }
+ bool isHappy(int n) {
+    int resultHappy;
+        resultHappy=Multiplier(Multiplier(n));
+        if(resultHappy==1){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 int main(){
         // pattern1(5);
        // pattern2(10);
@@ -132,4 +152,5 @@ int main(){
   // pattern7(10);
 //   pattern8(10);
 //    cout<<palindrome(121);
+cout<<isHappy(19);
 }
