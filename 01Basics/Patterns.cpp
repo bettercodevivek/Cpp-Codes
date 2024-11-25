@@ -91,6 +91,23 @@ int ReverseNum(int n){
     return rev;
 }
 
+bool palindrome(int n)
+{
+    int rev=0,rem;
+    while(n>0){
+        rem=n%10;
+        rev=rev*10+rem;
+        n=n/10;
+    }
+    int value = rev;
+    if(value == n){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
 void pattern9(int n){
     for(int i=0;i<n;i++){
         for(int j=0;j<n-i+1;j++){
@@ -114,5 +131,5 @@ int main(){
    // pattern6(10);
   // pattern7(10);
 //   pattern8(10);
-    cout<<ReverseNum(125);
+//    cout<<palindrome(121);
 }
