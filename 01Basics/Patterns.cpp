@@ -80,6 +80,31 @@ void pattern8(int n){
           cout<<endl;
     }
 }
+
+int ReverseNum(int n){
+    int rev=0,rem;
+    while(n>0){
+       rem=n%10;
+       rev=rev*10+rem;
+       n=n/10;
+    }
+    return rev;
+}
+
+void pattern9(int n){
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n-i+1;j++){
+            cout<<" ";
+        }
+        for(int j=n;j>0;j=j-2){
+            cout<<"*";
+        }
+        for(int j=0;j<n-i+1;j++){
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+}
 int main(){
         // pattern1(5);
        // pattern2(10);
@@ -88,5 +113,6 @@ int main(){
     // pattern5(5);
    // pattern6(10);
   // pattern7(10);
-  pattern8(10);
+//   pattern8(10);
+    cout<<ReverseNum(125);
 }
