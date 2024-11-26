@@ -123,6 +123,25 @@ void pattern9(int n){
         cout<<endl;
     }
 }
+// void pattern10(int n){
+//     int i=1;
+//   if(i<n/2){
+//      for(i;i<=n;i++){
+//         for(int j=1;j<=i;j++){
+//             cout<<"* ";
+//         }
+//         cout<<endl;
+//      }
+//   }
+//   else if(i>=n/2){
+//     for(i=n/2;i>0;i--){
+//         for(int j=1;j<=i;j++){
+//             cout<<"* ";
+//         }
+//         cout<<endl;
+//     }
+//   }
+// }
 void pattern11(int n){
     for(int i=1;i<=n;i++){
         for(int j=1;j<=i;j++){
@@ -146,6 +165,16 @@ void pattern11(int n){
         cout<<endl;
     }
 }
+void pattern13(int n){
+    int k=1;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            cout<<k<<" ";
+            k++;
+        }
+        cout<<endl;
+    }
+}
 int main(){
         // pattern1(5);
        // pattern2(10);
@@ -154,7 +183,8 @@ int main(){
     // pattern5(5);
    // pattern6(10);
   // pattern7(10);
-//   pattern8(10);
-//    cout<<palindrome(121);
-pattern11(5);
+ // pattern8(10);
+// pattern11(5);
+// pattern10(9);
+pattern13(5);
 }
