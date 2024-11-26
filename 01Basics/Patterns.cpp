@@ -175,6 +175,16 @@ void pattern13(int n){
         cout<<endl;
     }
 }
+void pattern14(int n){
+    for(int i=1;i<=n;i++){
+        int alph=97;
+        for(int j=1;j<=i;j++){
+           cout<<(char)alph<<" ";
+           alph++;
+        }
+        cout<<endl;
+    }
+}
 int main(){
         // pattern1(5);
        // pattern2(10);
@@ -186,5 +196,6 @@ int main(){
  // pattern8(10);
 // pattern11(5);
 // pattern10(9);
-pattern13(5);
+// pattern13(5);
+pattern14(10);
 }
