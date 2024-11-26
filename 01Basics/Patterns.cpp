@@ -123,25 +123,29 @@ void pattern9(int n){
         cout<<endl;
     }
 }
- int Multiplier(int x){
-             int rem,value=0;
-             while(x!=0){
-                rem=x%10;
-                value=value+pow(rem,2);
-                x=x/10;
-             }
-             return value;
+void pattern11(int n){
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            if(i%2!=0){
+            if(j%2!=0){
+                cout<<1;
+            }
+            else{
+                cout<<0;
+            }
+            }
+            if(i%2==0){
+                 if(j%2!=0){
+                cout<<0;
+            }
+            else{
+                cout<<1;
+            }
+            }
         }
- bool isHappy(int n) {
-    int resultHappy;
-        resultHappy=Multiplier(Multiplier(n));
-        if(resultHappy==1){
-            return true;
-        }
-        else{
-            return false;
-        }
+        cout<<endl;
     }
+}
 int main(){
         // pattern1(5);
        // pattern2(10);
@@ -152,5 +156,5 @@ int main(){
   // pattern7(10);
 //   pattern8(10);
 //    cout<<palindrome(121);
-cout<<isHappy(19);
+pattern11(5);
 }
