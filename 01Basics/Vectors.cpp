@@ -19,6 +19,21 @@ v.push_back(2);
 v.push_back(3);
 v.push_back(4);
 
-cout<<v[0]<<endl<<v[1]<<endl<<v[2]<<endl<<v[3];
+// cout<<v[0]<<endl<<v[1]<<endl<<v[2]<<endl<<v[3];
+
+// iterating through vector
+
+for(int i=0;i<v.size();i++){
+cout<<v[i]<<endl;
+}
+
+// pop_back() removes element from the last
+
+v.pop_back();
+
+
+for(int i=0;i<v.size();i++){
+cout<<v[i]<<endl;
+}
 
 }
