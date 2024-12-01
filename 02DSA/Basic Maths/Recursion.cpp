@@ -1,6 +1,7 @@
 // let us understand recursion in cpp for dsa.
 
 #include<iostream>
+#include<string>
 using namespace std;
 
 void countdown(int n){
@@ -18,7 +19,17 @@ int Factorial(int n){
     }
     return n*Factorial(n-1);
 }
+
+void NamePrinter(int n){
+    string name="vivek";
+   if(n==0){
+    return;
+   }
+   cout<<name<<endl;
+   NamePrinter(n-1);
+}
 int main(){
     // countdown(100);
-    cout<<Factorial(5);
+    // cout<<Factorial(5);
+    NamePrinter(10);
 }
