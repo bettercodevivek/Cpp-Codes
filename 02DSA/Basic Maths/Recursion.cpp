@@ -28,8 +28,32 @@ void NamePrinter(int n){
    cout<<name<<endl;
    NamePrinter(n-1);
 }
+void NumberPrinter(int i,int n){
+    if(i>n){
+        return;
+    }
+    cout<<i<<endl;
+    NumberPrinter(i+1,n); 
+}
+void NumberPrinter2(int i,int n){
+    if(n<i){
+        return;
+    }
+    cout<<n<<endl;
+    NumberPrinter2(i,n-1);
+}
+int SumOfNum(int n){
+    if(n==0){
+        return 0;
+    }
+    return n+SumOfNum(n-1);
+    
+}
 int main(){
     // countdown(100);
     // cout<<Factorial(5);
-    NamePrinter(10);
+    // NamePrinter(10);
+    // NumberPrinter(1,200);
+    // NumberPrinter2(1,100);
+cout<<SumOfNum(10);
 }
