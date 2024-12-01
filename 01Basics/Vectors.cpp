@@ -93,4 +93,15 @@ for(it=v.begin();it!=v.end();++it){
 
 // Iterators are like "pointers" in that they "point" to elements in a data structure rather than returning values from them. They refer to a specific position, providing a way to access and modify the value when needed, without making a copy of it.
 
+// The auto keyword allows the compiler to automatically determine the correct data type, which simplifies the code and makes it more readable:
+
+// so instead of writing vector<int>::iterator it, we can simply write auto it;
+
+auto itr = v.end()-1;
+
+cout<<*itr<<endl;
+
+// let us see usage of iterators along with erase and insert functions on vectors.
+
+
 }
