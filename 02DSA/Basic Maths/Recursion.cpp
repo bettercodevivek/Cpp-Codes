@@ -49,11 +49,24 @@ int SumOfNum(int n){
     return n+SumOfNum(n-1);
     
 }
+
+// int Factorial1(int n){
+//    int factorial=1;
+//    while(n>0){
+//     factorial=factorial*n;
+//     n--;
+//    }
+//    return factorial;
+// }
+
+void ReverseArray(int n){
+    
+}
 int main(){
     // countdown(100);
     // cout<<Factorial(5);
     // NamePrinter(10);
     // NumberPrinter(1,200);
     // NumberPrinter2(1,100);
-cout<<SumOfNum(10);
+ 
 }
