@@ -50,7 +50,16 @@ int SumOfNum(int n){
     return n+SumOfNum(n-1);
     
 }
-
+void ReverseArrayRecursion(int arr[],int i,int j){
+    int temp;
+    if(i>=j){
+    return ;
+    }
+    temp=arr[i];
+    arr[i]=arr[j];
+    arr[j]=temp;
+    ReverseArrayRecursion(arr,i+1,j-1);
+}
 // int Factorial1(int n){
 //    int factorial=1;
 //    while(n>0){
@@ -102,5 +111,11 @@ int main(){
 // for(int val:arr1){
 //     cout<<val<<" ";
 // }
+// int array1[5]={1,2,3,4,5};
+int array2[10]={2,4,6,8,10,12,14,16,18,20};
+ReverseArrayRecursion(array2,0,9);
+for(int i=0;i<10;i++){
+    cout<<array2[i]<<"  ";
+}
 
 }
