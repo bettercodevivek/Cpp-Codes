@@ -21,3 +21,14 @@ Approach:
     We will just perform the XOR of all elements of the array using a loop and the final XOR will be the answer.
 */
 
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    vector<int> nums = {3,4,6,4,3};
+    int xorr=0;
+    for(int i=0;i<nums.size();i++){
+         xorr=xorr^nums[i];
+    }
+    cout<<xorr;
+}
