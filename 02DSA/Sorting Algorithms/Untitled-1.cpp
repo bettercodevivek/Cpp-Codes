@@ -26,9 +26,33 @@ void Bubble(int arr[],int n){
         }
     }
 }
+void Insertion(int arr[],int n){
+    for(int i=0;i<n;i++){
+        int j=i;
+        while(j>0 && arr[j-1]>arr[j]){
+            int temp=arr[j];
+            arr[j]=arr[j-1];
+            arr[j-1]=temp;
+            j--;
+        }
+    }
+}
+void RecursiveBubble(int arr[],int n,int j,int i){
+    if(i<=0){
+        return;
+    }
+    else{
+        if(j<i && arr[j]>arr[j+1]){
+            int temp=arr[j];
+            arr[j]=arr[j+1];
+            arr[j+1]=temp;
+        }
+        RecursiveBubble(arr,n,j++,i--);
+    }
+}
 int main(){
     int arr1[6]={3,8,2,4,6,1};
-    Bubble(arr1,6);
+    RecursiveBubble(arr1,6,0,5);
     for(int value:arr1){
         cout<<value<<"  ";
     }
