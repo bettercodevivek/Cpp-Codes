@@ -52,4 +52,18 @@ int main(){
     }
 
 
+   // iterating over an unordered map can be done in 2 ways :-
+
+   // 1st way
+
+   for(auto &pair:map1){
+    cout<<"Key:-"<<pair.first<<"value:-"<<pair.second<<endl;
+   }
+
+   // 2nd way
+
+   for(auto it=map2.begin();it!=map2.end();++it){
+     cout<<"key:- "<<it->first<<" "<<"value:- "<<it->second<<endl;
+   }
+
 }
