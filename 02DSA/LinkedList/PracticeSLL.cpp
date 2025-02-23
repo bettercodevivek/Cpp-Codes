@@ -44,6 +44,16 @@ class LinkedList {
         }
         cout<<"nullptr"<<endl;
     }
+
+    void DeleteLastNode(){
+        Node* temp = head;
+    
+        while(temp->Next != nullptr){
+            temp = temp->Next;
+        }
+        // free(temp->Next);
+        temp->Next = nullptr;
+    }
 };
 
 Node* ArrayToLL(vector<int> &arr){
@@ -58,6 +68,7 @@ Node* ArrayToLL(vector<int> &arr){
     return head;
 }
 
+
 int main(){
 
     LinkedList list1;
@@ -69,6 +80,12 @@ int main(){
     list1.insertNode(50);
 
     list1.Display();
+
+    list1.DeleteLastNode();
+
+    list1.Display();
+
+    
    
     // int n;
     // cin>>n;

@@ -45,6 +45,24 @@ bool CheckIfExists(Node* head, int val){
     return false;
 }
 
+Node* DeleteHead(Node* head){
+    Node* temp = head;
+    head=head->Next;
+    free(temp);
+    return head;
+}
+
+void DeleteLast(Node* head){
+    Node* temp = head;
+    while(temp->Next->Next != nullptr){
+        temp=temp->Next;
+    }
+    Node* last = temp->Next;
+    temp->Next=nullptr;
+    free(last);
+
+}
+
 int main(){
     
     vector<int> arr1 = {1,2,3,4,5};
@@ -55,13 +73,20 @@ int main(){
 
     // let us see traversal through a linked list
 
+    // Node* newHead = DeleteHead(head);
+
+     DeleteLast(head);
+
     Node*temp = head;
+ 
 
     while(temp != nullptr){
-        cout<<temp->data<<"  ";
+        cout<<temp->data<<"->";
         temp=temp->Next;
     }
 
-    cout<<CheckIfExists(head,22);
+    
+
+    // cout<<CheckIfExists(head,22);
 
 }
