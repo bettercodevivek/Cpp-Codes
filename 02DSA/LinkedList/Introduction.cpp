@@ -63,6 +63,12 @@ void DeleteLast(Node* head){
 
 }
 
+void insertAtBegin(Node*& head,int data){
+    Node* newNode = new Node(data);
+    newNode->Next = head;
+    head=newNode;
+}
+
 int main(){
     
     vector<int> arr1 = {1,2,3,4,5};
@@ -75,7 +81,9 @@ int main(){
 
     // Node* newHead = DeleteHead(head);
 
-     DeleteLast(head);
+    //  DeleteLast(head);
+
+    insertAtBegin(head,6);
 
     Node*temp = head;
  
