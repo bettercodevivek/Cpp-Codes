@@ -69,6 +69,15 @@ void insertAtBegin(Node*& head,int data){
     head=newNode;
 }
 
+void insertAtSpecific(Node*& head,int data,int target){
+    Node* temp=head;
+    Node* newNode = new Node(data);
+    while(temp->data != target){
+            temp=temp->Next;
+    }
+ 
+}
+
 int main(){
     
     vector<int> arr1 = {1,2,3,4,5};
@@ -84,6 +93,8 @@ int main(){
     //  DeleteLast(head);
 
     insertAtBegin(head,6);
+
+    // insertAtSpecific(head,12,4);
 
     Node*temp = head;
  
