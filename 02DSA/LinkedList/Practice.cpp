@@ -51,6 +51,10 @@ class LinkedList{
       newnode->Next = temp->Next;
       temp->Next=newnode;
    }
+   void deleteAtBegin(){
+    
+    
+   }
    void display(){
     Node* temp = head;
     while(temp != nullptr){
@@ -69,7 +73,8 @@ int main(){
     list1.insertAtEnd(30);
     list1.insertAtEnd(40);
     list1.insertAtBegin(60);
-    list1.insertAtSpecific(70,6);
+    list1.insertAtSpecific(70,4);
+    // list1.deleteAtBegin();
 
     list1.display();
 }
